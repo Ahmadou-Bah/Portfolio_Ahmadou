@@ -1,0 +1,187 @@
+/* Importation des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* --- Styles Généraux --- */
+body {
+    font-family: 'Roboto', sans-serif; /* Police principale pour le corps du texte */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Arrière-plan léger */
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; /* Pour gérer les flottants */
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Police pour les titres */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff; /* Couleur des liens */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- En-tête (Header) --- */
+header {
+    background: #333; /* Arrière-plan sombre */
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #007bff 3px solid; /* Bordure inférieure colorée */
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+header .tagline {
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #007bff;
+    text-decoration: none; /* Pas de soulignement au survol */
+}
+
+/* --- Section Héro / À Propos --- */
+.hero {
+    padding: 60px 0;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.hero .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Image ronde */
+    object-fit: cover; /* Assure que l'image remplit le cercle */
+    border: 3px solid #007bff;
+    margin-bottom: 20px;
+}
+
+/* --- Sections Projets et Contact --- */
+.projects-section, .contact-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-item {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    text-align: left; /* Aligne le texte des projets à gauche */
+}
+
+.project-item h3 {
+    text-align: left; /* Réaligne le titre du projet à gauche */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+    text-decoration: none;
+}
+
+/* --- Pied de Page (Footer) --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* --- Responsive Design Basique (pour les petits écrans) --- */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .hero, .projects-section, .contact-section {
+        padding: 30px 10px;
+    }
+}
+/* --- Section Compétences --- */
+.skills-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+.skills-section ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
